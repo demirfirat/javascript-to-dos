@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  list-style-type: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+ul li.checked {
+  display: flex;
+  align-items: center;
+  background: #276678;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #7dc6fb;
+  color: white;
+
+}
+
+.header {
+  background-color: #7dc6fb;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+.button {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.button:hover {
+  background-color: #bbb;
+}
+/* Liste öğeleri için stiller */
+.list-group-item {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  background-color: #f8f9fa; /* Arka plan rengi */
+  border: 1px solid #dee2e6; /* Sınır (border) ekler */
+  border-radius: 5px; /* Köşeleri yuvarlatır */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Hover efekti için geçiş animasyonu */
+}
+
+/* Hover efekti */
+.list-group-item:hover {
+  background-color: #e2e6ea; /* Üzerine gelince arka plan rengini değiştir */
+  transform: translateY(-2px); /* Hafifçe yukarı kaldırır */
+}
+
+/* Silme butonu için özel stil */
+.list-group-item i {
+  color: #dc3545; /* Silme butonunu kırmızı yap */
+  cursor: pointer; /* Tıklanabilir olduğunu göstermek için fare imlecini değiştirir */
+  transition: transform 0.2s ease;
+}
+
+/* Silme butonuna hover efekti */
+.list-group-item i:hover {
+  transform: scale(1.2); /* Üzerine gelince butonu büyüt */
+}
