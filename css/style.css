@@ -77,12 +77,12 @@ ul li.checked::before {
   clear: both;
 }
 
-input {
+ #addText {
   margin: 0;
   border: none;
-  border-radius: 0;
-  width: 75%;
-  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  width: 100%;
+  padding: 25px;
   float: left;
   font-size: 16px;
 }
@@ -97,39 +97,45 @@ input {
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
-  border-radius: 0;
+  border-radius: 0 5px 5px 0;
+  border: none;
 }
 
 .button:hover {
   background-color: #bbb;
 }
-/* Liste öğeleri için stiller */
+
 .list-group-item {
   display: flex;
   justify-content: space-between; 
   align-items: center;
   padding: 10px 20px;
   margin-bottom: 5px;
-  background-color: #f8f9fa; /* Arka plan rengi */
-  border: 1px solid #dee2e6; /* Sınır (border) ekler */
-  border-radius: 5px; /* Köşeleri yuvarlatır */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Hover efekti için geçiş animasyonu */
+  background-color: #f8f9fa; 
+  border: 1px solid #dee2e6; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
-/* Hover efekti */
 .list-group-item:hover {
-  background-color: #e2e6ea; /* Üzerine gelince arka plan rengini değiştir */
-  transform: translateY(-2px); /* Hafifçe yukarı kaldırır */
+  background-color: #e2e6ea; 
+  transform: translateY(-2px); 
 }
 
-/* Silme butonu için özel stil */
 .list-group-item i {
-  color: #dc3545; /* Silme butonunu kırmızı yap */
-  cursor: pointer; /* Tıklanabilir olduğunu göstermek için fare imlecini değiştirir */
+  color: #dc3545; 
+  cursor: pointer; 
   transition: transform 0.2s ease;
 }
 
-/* Silme butonuna hover efekti */
+
 .list-group-item i:hover {
-  transform: scale(1.2); /* Üzerine gelince butonu büyüt */
+  transform: scale(1.2); 
+}
+.toast {
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  min-width: 300px; 
+  max-width: 400px; 
+  
 }
