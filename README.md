@@ -20,6 +20,6 @@ Bu proje, kullanıcıların yapılacaklar listesini yönetebileceği basit bir w
 - Bootstrap 4
 
 ## Nasıl Kullanılır?
-(Canlı görüntülemek için(tamamen çalışmayabilir.))[https://htmlpreview.github.io/?https://github.com/demirfirat/javascript-to-dos/blob/main/index.html]
-(dosyayı indirip görüntülemek ve düzenlemek için)[https://github.com/demirfirat/javascript-to-dos/archive/refs/heads/main.zip] tıklayabilirsiniz.
+- [Canlı görüntülemek için(tamamen çalışmayabilir.)](https://htmlpreview.github.io/?https://github.com/demirfirat/javascript-to-dos/blob/main/index.html)
+- [dosyayı indirip görüntülemek ve düzenlemek için](https://github.com/demirfirat/javascript-to-dos/archive/refs/heads/main.zip) tıklayabilirsiniz.
 
